@@ -1,24 +1,32 @@
-
-
-/* Animação de entrada do Header, com @keyframes */
-@keyframes entradaHeader {
-  from {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/*Pseudo-Classes*/
+/* Ao selecionar campos do formulário, eles ficam em destaque */
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #922f2f;
+  box-shadow: 0 0 0 3px rgba(146, 47, 47, 0.25);
+  background-color: #fff8f0;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
-header {
-    animation: entradaHeader 0.8s ease-out both;
+/* Linhas da tabela com cores alternadas */
+table tr:nth-child(even) {
+  background-color: #f9eaea;
+}
+
+table tr:nth-child(odd):not(:first-child) {
+  background-color: #fff;
+}
+
+/* Quando as respostas no campo de formulario são válidas, o campo fica com borda verde */
+input:valid,
+textarea:valid {
+  border-color: #4a7c4e;
+  box-shadow: 0 0 0 2px rgba(74, 124, 78, 0.2);
 }
 
 
-
-
+/*Pseudo-Elementos*/
 main ul li {
     position: relative;
     list-style: none;
@@ -77,4 +85,21 @@ nav ul li a::after {
 
 nav ul li a:hover::after {
     width: 100%;
+}
+
+/*Keyframes*/
+/* Animação de entrada do Header, com @keyframes */
+@keyframes entradaHeader {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+header {
+    animation: entradaHeader 0.8s ease-out both;
 }
