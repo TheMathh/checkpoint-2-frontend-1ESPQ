@@ -103,3 +103,34 @@ nav ul li a:hover::after {
 header {
     animation: entradaHeader 0.8s ease-out both;
 }
+
+/*Transições suaves*/
+/* Deixa a transição de cor e espaçamento mais suave para os links de navegação da hover ao passar o mouse */
+nav a {
+  transition: color 0.3s ease, letter-spacing 0.3s ease;
+}
+
+/*Suaviza as transições que serão utilizadas no botão*/
+button {
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+/*Eleva o botão ao passar o mouse por cima*/
+button:hover {
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 6px 16px rgba(92, 26, 26, 0.35);
+}
+
+/*Efeito de clique no botão, dando a sensação de que ele foi pressionado*/
+button:active {
+  transform: translateY(0) scale(0.98);
+}
+
+/* Transição nas linhas da tabela na página produtos*/
+table tr {
+  transition: background-color 0.25s ease;
+}
+
+table tr:hover {
+  background-color: #f0d5d5 !important;
+}   
