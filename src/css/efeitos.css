@@ -134,3 +134,14 @@ table tr {
 table tr:hover {
   background-color: #f0d5d5 !important;
 }   
+
+/* Tranformações*/
+
+img {
+    transition: transform 0.4s ease;
+}
+
+/* Efeito ao passar o mouse */
+img:hover {
+    transform: scale(1.05);
+}
