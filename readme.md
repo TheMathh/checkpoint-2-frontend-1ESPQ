@@ -38,6 +38,50 @@ O site é composto por 5 páginas principais:
 - Inclusão das imagnes
 - CSS global linkado (`style.css`)
 
+## Efeitos Visuais ✨
+
+Os efeitos visuais do Check-Point 02 estão definidos no arquivo `src/css/efeitos.css`, importado no `style.css`.
+
+## Pseudo-classes utilizadas
+
+| Pseudo-classe | Elemento | Efeito |
+
+| `:focus` | `input` e `textarea` | Destaca o campo com borda vinho e sombra suave ao ser selecionado |
+| `:nth-child(even)` | Linhas da `<table>` | Aplica fundo rosé alternado nas linhas pares da tabela de produtos |
+| `:not(:first-child)` | Linhas ímpares da `<table>` | Garante fundo branco nas linhas ímpares, exceto o cabeçalho |
+| `:valid` | `input` e `textarea` | Exibe borda verde quando o campo está preenchido corretamente |
+| `:hover` | `nav ul li a` | Exibe sublinhado animado vinho ao passar o mouse nos links do menu |
+
+## Pseudo-elementos utilizados
+
+| Pseudo-elemento | Elemento | Efeito |
+
+| `::before` | `main ul li` | Exibe uma etiqueta dourada "Reserva Especial" que aparece com animação ao hover |
+| `::after` | `nav ul li a` | Linha vinho que cresce da esquerda para direita sob o link ao hover |
+
+## Animações com `@keyframes`
+
+| Nome | Aplicação | Descrição |
+
+| `entradaHeader` | `header` | O cabeçalho desliza de cima para baixo com fade-in ao carregar a página |
+
+## Transições
+
+| Elemento | Efeito |
+
+| Links do `nav` | Mudança de cor e espaçamento das letras de forma suave |
+| `button` | Eleva e cresce levemente no hover; afunda ao ser clicado |
+| Linhas da `<table>` | Fundo muda para rosé suavemente ao passar o mouse |
+| Imagens | Crescem e inclinam levemente com sombra ao receber hover |
+
+## Transformações CSS
+
+| Transformação | Elemento | Descrição |
+
+| `scale(1.05) rotate(2deg)` | `img:hover` | Imagens crescem e inclinam levemente ao receber hover |
+| `translateY(-2px) scale(1.04)` | `button:hover` | Botão sobe e cresce ao receber hover |
+
+
 ## Como visualizar
 
 -Link do github pages
