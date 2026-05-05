@@ -85,7 +85,7 @@ Os efeitos visuais do Check-Point 02 estão definidos no arquivo `src/css/efeito
 ## Como visualizar
 
 -Link do github pages
-https://anthonylealm.github.io/cp1-frontend-1ESPQ/
+https://themathh.github.io/checkpoint-2-frontend-1ESPQ/
 
 ## Integrantes 
 
